@@ -38,4 +38,26 @@ extension RocketLaunch {
   @NSManaged public var launchDate: Date?
   @NSManaged public var launchpad: String?
   @NSManaged public var notes: String?
+  
+  static func createWith(
+    name: String,
+    notes: String,
+    launchDate: Date,
+    isViewed: Bool,
+    launchpad: String,
+    using managedObjectContext: NSManagedObjectContext
+  ) {
+    let launch = RocketLaunch(context: managedObjectContext)
+    launch.name = name
+    launch.notes = notes
+    launch.launchpad = launchpad
+    launch.isViewed = isViewed
+    launch.launchDate = launchDate
+    do {
+      try managedObjectContext.save()
+    } catch {
+      let nsError = error as NSError
+      fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    }
+  }
 }
