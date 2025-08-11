@@ -17,6 +17,8 @@
 		AEF7FB8227C1856F000CBF46 /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7FB8127C1856F000CBF46 /* LaunchesView.swift */; };
 		AEF7FB8627C18583000CBF46 /* LaunchCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7FB8527C18583000CBF46 /* LaunchCreateView.swift */; };
 		AEF7FB8A27C18598000CBF46 /* LaunchStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7FB8927C18598000CBF46 /* LaunchStatusView.swift */; };
+		B7C12C332E4A62AB0011037B /* RocketLaunches.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7C12C312E4A62AA0011037B /* RocketLaunches.xcdatamodeld */; };
+		B7C12C352E4A644E0011037B /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C12C342E4A644E0011037B /* Persistance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		AEF7FB8127C1856F000CBF46 /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
 		AEF7FB8527C18583000CBF46 /* LaunchCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCreateView.swift; sourceTree = "<group>"; };
 		AEF7FB8927C18598000CBF46 /* LaunchStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStatusView.swift; sourceTree = "<group>"; };
+		B7C12C322E4A62AA0011037B /* RocketLaunches.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RocketLaunches.xcdatamodel; sourceTree = "<group>"; };
+		B7C12C342E4A644E0011037B /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Persistance.swift; path = RocketLaunches/Persistance.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
 				18D775CE22AD944400AE281E /* Info.plist */,
 				18D775C822AD944400AE281E /* Preview Content */,
+				B7C12C312E4A62AA0011037B /* RocketLaunches.xcdatamodeld */,
 			);
 			path = RocketLaunches;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 		AEF7FB7827C184C1000CBF46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B7C12C342E4A644E0011037B /* Persistance.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,9 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
+				B7C12C332E4A62AB0011037B /* RocketLaunches.xcdatamodeld in Sources */,
 				AEF7FB8227C1856F000CBF46 /* LaunchesView.swift in Sources */,
 				1839F4B025190F2A00BB00F1 /* RocketLaunchesApp.swift in Sources */,
 				AE1D5CE827C2A1120033125A /* LaunchDetailView.swift in Sources */,
+				B7C12C352E4A644E0011037B /* Persistance.swift in Sources */,
 				AEF7FB8627C18583000CBF46 /* LaunchCreateView.swift in Sources */,
 				AEF7FB8A27C18598000CBF46 /* LaunchStatusView.swift in Sources */,
 			);
@@ -424,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "RocketLaunches/Preview\\ Content";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6QWH9L6FTU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RocketLaunches/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -432,7 +440,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.RocketLaunches;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.RocketLaunches.colin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "RocketLaunches/Preview\\ Content";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6QWH9L6FTU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RocketLaunches/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -453,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.RocketLaunches;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.RocketLaunches.colin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,6 +535,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B7C12C312E4A62AA0011037B /* RocketLaunches.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B7C12C322E4A62AA0011037B /* RocketLaunches.xcdatamodel */,
+			);
+			currentVersion = B7C12C322E4A62AA0011037B /* RocketLaunches.xcdatamodel */;
+			path = RocketLaunches.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18D775B522AD944300AE281E /* Project object */;
 }
